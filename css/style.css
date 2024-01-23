@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&display=swap');
+body
+{
+	background-color:#fff; /*màu nền trang web */
+	color: #A15F32;
+	font-family: 'Inter',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 14px;
+	margin: 0
+}
+h1{	font-size: 42px}
+h2{	font-size: 32px}
+h3{	font-size: 22px}
+h4{ font-size: 20px}
+h5{ font-size: 18px}
+h6{ font-size: 16px}
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Inter',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #A15F32
+}
+.btn-primary
+{
+	background-color: #A15F32;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase
+}
+.btn-primary:hover{ background-color:#F2B48C}
+
+* {box-sizing: border-box}
+.col-1 { width: 8.333333%}
+.col-2 { width: 16.66%}
+.col-3 { width: 25%}
+.col-4 { width: 33.33333%}
+.col-5{ width: 41.66%}
+.col-6 { width: 50%}
+.col-7 { width: 58.33%}
+.col-8 { width: 66.66%}
+.col-9 { width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12 { width: 100%}
+.container { width: 90%; margin: auto}
+[class*="col-"]
+{
+/*	border: 1px solid red;*/
+	padding:15px
+}
+
+.img-100 { width: 100%; height: auto}
+.row { display: flex; flex-wrap: wrap}
+nav
+{
+	background:#fff;
+	/*position: fixed;
+	width: 100%;*/
+	box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+	z-index: 999;
+	position: relative
+}
+nav .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+nav a.logo img { width: 150px; height: auto}
+
+nav .menu ul
+{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	display: flex;	
+	perspective: 100px
+	}
+nav .menusanpham ul a
+{
+	color:#A15F32;
+	text-decoration: none
+}
+nav .menusanpham ul a:hover{color:#F2B48C}
+nav .menu ul li { position: relative}
+nav .menu ul li a
+{
+	color: #A15F32;
+	text-decoration: none;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	display: block;
+	font-size: 14px;
+	font-weight: bold
+}
+nav .menu ul li a:hover{
+	color: #F2B48C
+}
+/*nav .menu ul li a.active
+{
+	border-bottom:#C5A25D 2px double;
+	
+}*/
+nav .menu ul ul
+{
+	display: block;
+	background: #fff;
+	position: absolute;
+	left: 0px;
+	top:100%;
+	width: 200px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 9999;
+	transform: rotateX(-90deg);
+	transform-origin: left top;
+	transition: all 0.5s
+}
+nav .menu ul li:hover >ul
+{
+	top: 100%; left: 0;
+	visibility: visible;
+	opacity: 1;
+	transform: rotateX(0deg);
+}
+nav .menu ul ul a
+{
+	display: block
+}
+#banner .item
+{
+	position: relative
+}
+#banner .item .banner-caption
+{
+	position: absolute;
+	/*border: 5px solid red;*/
+	width: 100%;
+	left: 0%;
+	top: 20%; 
+	color: #fff; text-align: center
+}
+#banner .item .banner-caption h1
+{ color: #fff}
+.text-center{ text-align: center}
+.text-yellow{ color:#000}
+.card h4, .card p,.card h5{ margin: 10px}
+.card h5, .card h6{ margin: 10px}
+.card { position: relative}
+.card button
+{
+	position: absolute;
+	top: 60%; left: 35%;
+	opacity: 0; visibility: hidden;
+	transition: all 0.75s
+}
+.card:hover> button
+{
+	top: 40%;
+	opacity: 1; visibility: visible;
+}
+.align-items-center{align-items:center}
+section{ margin: 10px 0 0 0; padding: 10px 0}
+nav .menusanpham
+{
+	top: 0px;
+	left: 0px;
+	padding: 15px 0px;
+	font-size: 14px
+}
+
+#vung1
+{
+	display:flex
+}
+#vung2
+{
+	display:flex
+}
+#vung3
+{
+	display:flex
+}
+#vung4
+{
+	display:flex
+}
+#vung5
+{
+	display:flex
+}
+#vung6
+{
+	display:flex
+}
+#vung8
+{
+	display:flex
+}
+#vung9
+{
+	display:flex
+}
+#vung10
+{
+	display:flex
+}
+#footer
+{
+	background-color:#A15F32;
+	background-repeat: no-repeat;
+	padding:30px;
+	text-align: center
+}
+#footer .container h5
+{color: #F2B48C}
+
+.justify-center{justify-content:center}
+
